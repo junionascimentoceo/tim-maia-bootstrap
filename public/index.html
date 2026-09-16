@@ -2,89 +2,122 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim Maia - O Rei do Soul Brasileiro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Estrutura HTML inicial do projeto Tim Maia -->
 
-    <header class="cabecalho">
-        <div class="logo">Tim Maia</div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#albuns">Álbuns</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg cabecalho">
+        <div class="container">
+            <span class="navbar-brand logo">Tim Maia</span>
+            <nav class="menu">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#albuns">Álbuns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <section id="inicio" class="hero">
-            <img src="https://picsum.photos/id/91/500/400" alt="Foto de Tim Maia">
-            <div class="hero-texto">
-                <h1>O Rei do Soul Brasileiro</h1>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="https://picsum.photos/id/91/500/400" alt="Foto de Tim Maia" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-6 hero-texto">
+                        <h1>O Rei do Soul Brasileiro</h1>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="sobre" class="sobre">
-            <h2>Sobre Tim Maia</h2>
-            <p>Tim Maia foi um cantor, compositor e multi-instrumentista brasileiro, considerado um dos maiores nomes da música popular brasileira. Pioneiro do soul e da black music no Brasil, sua voz marcante e seu estilo único influenciaram gerações de artistas.</p>
+            <div class="container">
+                <h2>Sobre Tim Maia</h2>
+                <p>Tim Maia foi um cantor, compositor e multi-instrumentista brasileiro, considerado um dos maiores nomes da música popular brasileira. Pioneiro do soul e da black music no Brasil, sua voz marcante e seu estilo único influenciaram gerações de artistas.</p>
+            </div>
         </section>
 
         <section id="albuns" class="albuns">
-            <h2>Álbuns</h2>
-            <div class="grade-albuns">
+            <div class="container">
+                <h2>Álbuns</h2>
+                <div class="row g-4">
 
-                <article class="album">
-                    <img src="https://picsum.photos/id/128/300/300" alt="Capa do álbum Tim Maia 1970">
-                    <h3>Tim Maia</h3>
-                    <p>1970 — Álbum de estreia solo, com clássicos como "Preciso Aprender a Ser Só".</p>
-                </article>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <article class="album h-100">
+                            <img src="https://picsum.photos/id/128/300/300" alt="Capa do álbum Tim Maia 1970" class="img-fluid rounded">
+                            <h3>Tim Maia</h3>
+                            <p>1970 — Álbum de estreia solo, com clássicos como "Preciso Aprender a Ser Só".</p>
+                        </article>
+                    </div>
 
-                <article class="album">
-                    <img src="https://picsum.photos/id/145/300/300" alt="Capa do álbum Tim Maia 1971">
-                    <h3>Tim Maia</h3>
-                    <p>1971 — Segundo álbum de estúdio, consolidando o estilo soul do artista.</p>
-                </article>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <article class="album h-100">
+                            <img src="https://picsum.photos/id/145/300/300" alt="Capa do álbum Tim Maia 1971" class="img-fluid rounded">
+                            <h3>Tim Maia</h3>
+                            <p>1971 — Segundo álbum de estúdio, consolidando o estilo soul do artista.</p>
+                        </article>
+                    </div>
 
-                <article class="album">
-                    <img src="https://picsum.photos/id/160/300/300" alt="Capa do álbum Racional Vol. 1">
-                    <h3>Racional Vol. 1</h3>
-                    <p>1975 — Disco marcado pela fase racional, com sonoridade funk e letras filosóficas.</p>
-                </article>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <article class="album h-100">
+                            <img src="https://picsum.photos/id/160/300/300" alt="Capa do álbum Racional Vol. 1" class="img-fluid rounded">
+                            <h3>Racional Vol. 1</h3>
+                            <p>1975 — Disco marcado pela fase racional, com sonoridade funk e letras filosóficas.</p>
+                        </article>
+                    </div>
 
-                <article class="album">
-                    <img src="https://picsum.photos/id/180/300/300" alt="Capa do álbum Nova Era Glacial">
-                    <h3>Nova Era Glacial</h3>
-                    <p>1982 — Retorno ao soul clássico após a fase racional.</p>
-                </article>
+                    <div class="col-12 col-sm-6 col-md-3">
+                        <article class="album h-100">
+                            <img src="https://picsum.photos/id/180/300/300" alt="Capa do álbum Nova Era Glacial" class="img-fluid rounded">
+                            <h3>Nova Era Glacial</h3>
+                            <p>1982 — Retorno ao soul clássico após a fase racional.</p>
+                        </article>
+                    </div>
 
+                </div>
             </div>
         </section>
 
         <section id="contato" class="contato">
-            <h2>Contato</h2>
-            <form class="formulario">
-                <input type="text" name="nome" placeholder="Nome completo" required>
-                <input type="email" name="email" placeholder="Seu e-mail" required>
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="container">
+                <h2>Contato</h2>
+                <form class="formulario row justify-content-center g-3">
+                    <div class="col-12 col-md-8">
+                        <input type="text" name="nome" class="form-control" placeholder="Nome completo" required>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="email" name="email" class="form-control" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <button type="submit" class="btn btn-warning w-100">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </section>
 
     </main>
 
     <footer class="rodape">
-        <p>Tim Maia - Todos os direitos reservados</p>
-        <nav class="redes-sociais">
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-            <a href="#">Spotify</a>
-        </nav>
+        <div class="container">
+            <p>Tim Maia - Todos os direitos reservados</p>
+            <nav class="redes-sociais">
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+                <a href="#">Spotify</a>
+            </nav>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
